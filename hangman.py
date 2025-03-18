@@ -1,3 +1,6 @@
+import random
+
+
 hangman = [ '''
       _______
      |/      |
@@ -64,7 +67,10 @@ hangman = [ '''
     _|___
 ''']
 
-secret_word = "godzilla"
+secret_word_list = ["understanding", "traditional", "switch", "case", "statements", "godzilla"]
+
+r = random.randint(0, len(secret_word_list) - 1)
+secret_word = secret_word_list[r]
 
 masked_word = [ '_' ] * len(secret_word)
 # list to store incorrect guess
