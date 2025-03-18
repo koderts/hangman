@@ -67,7 +67,7 @@ hangman = [ '''
     _|___
 ''']
 
-secret_word_list = ["understanding", "traditional", "switch", "case", "statements", "godzilla", "adventure", "noodles", "idiot", "barbeque", "apple", "fruit", "fridge", "television", "skibidi", "languages", "interesting", "platinum", "stupid", "សួស្តី", "drawing", "សួស្តី"]
+secret_word_list = ["understanding", "traditional", "switch", "case", "statements", "godzilla", "adventure", "noodles", "idiot", "barbeque", "apple", "fruit", "fridge", "television", "skibidi", "languages", "interesting", "platinum", "stupid", "hello", "drawing", "cat", "dog", "google", "strawberry", "blueberry", "history", "beach", "musuem", "intelligence", "regulations", "fitness", "hatred", "magic", "wizard", "books", "phobias", "Cornmeal", "donate", "charity", "initiation", "japan", "cambodia", "education", "appreciaition", "organisation", "anime", "cartoon", "movies", "programming", "banana", "mathematics"]
 
 r = random.randint(0, len(secret_word_list) - 1)
 secret_word = secret_word_list[r]
