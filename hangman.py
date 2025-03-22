@@ -91,6 +91,11 @@ if __name__ == '__main__':
 
         guess_letter = input("Guess a letter: ")
 
+        # validate that user input is alphabetic chararcters
+        if not guess_letter.isalpha():
+            print("\nPlease enter a letter from A to Z.")
+            continue
+
         for index, char in enumerate(secret_word):
             if guess_letter == char:
                 masked_word[index] = char.capitalize()
