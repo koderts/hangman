@@ -70,8 +70,29 @@ r'''
     _|___
 ''']
 
-SECRET_WORD_LIST = ["understanding", "traditional", "switch", "case", "statements", "godzilla", "adventure", "noodles", "idiot", "barbeque", "apple", "fruit", "fridge", "television", "skin", "languages", "interesting", "platinum", "stupid", "hello", "drawing", "cat", "dog", "google", "strawberry", "blueberry", "history", "beach", "musuem", "intelligence", "regulations", "fitness", "hatred", "magic", "wizard", "books", "phobias", "Cornmeal", "donate", "charity", "initiation", "japan", "cambodia", "education", "appreciaition", "organisation", "anime", "cartoon", "movies", "programming", "banana", "mathematics", "nature", "ultraanatomy", "toxicomorphology", "electroentomonomy", "mineralobiomorphology", "parageography", "neurohistory", "pararadiogenics", "gold", "formula", "range", "heart", "assignment", "alphabet"]
-
+SECRET_WORD_LIST = ["understanding", "traditional", "switch", "case", "statements", 
+                    "godzilla", "adventure", "noodles", "idiot", "barbeque", "apple", 
+                    "fruit", "fridge", "television", "skin", "languages", "interesting",
+                    "platinum", "stupid", "hello", "drawing", "cat", "dog", "google", 
+                    "strawberry", "blueberry", "history", "beach", "musuem", "intelligence",
+                    "regulations", "fitness", "hatred", "magic", "wizard", "books", "phobias",
+                    "Cornmeal", "donate", "charity", "initiation", "japan", "cambodia", "education",
+                    "appreciation", "organisation", "anime", "cartoon", "movies", "programming", 
+                    "banana", "mathematics", "nature", "ultraanatomy", "toxicomorphology", 
+                    "electroentomonomy", "mineralobiomorphology", "parageography", "neurohistory", 
+                    "pararadiogenics", "gold", "formula", "range", "heart", "assignment", "alphabet",
+                    "operate", "tremor", "poise", "plutonium", "unvarying", "yoga", "amiable", "scribing", 
+                    "fructose", "clever", "protract", "glacial", "delouse", "glimmer", "antirust", "judo",
+                    "unsorted", "diaper", "almanac", "trilogy", "secrecy", "unloved", "velvet", "asparagus",
+                    "phonics", "lilly", "stoppage", "lego", "penalty", "senator", "ripeness", "greedily",
+                    "pluck", "undusted", "bauble", "serve", "moocher", "sizzle", "sponge", "eject", "conform",
+                    "evident", "atop", "shrine", "cinch", "nemeses", "thespian", "grief", "bullpen", "amendable",
+                    "catching", "wind", "dumping", "daunting", "munchkin", "yippee", "mortified", "pavilion",
+                    "dating", "afloat", "armband", "trimness", "victory", "irregular", "sandpaper", "ascend",
+                    "negate", "upstroke", "traps", "pajamas", "violation", "snugness", "italicize", "stank",
+                    "doorman", "hardhead", "duffel", "aged", "pucker", "outhouse", "absently", "tribune",
+                    "backup", "fascism", "stinky", "willing", "available", "cornbread", "purifier", "angular"]
+                    
 def start_new_game():
     session['secret_word'] = random.choice(SECRET_WORD_LIST)
     session['masked_word'] = [ '_' ] * len(session['secret_word'])
