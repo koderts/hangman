@@ -3,7 +3,7 @@ Enjoy playing Hangman game written by your truly, KoderT!
 
 ## Prerequisites
 * Python 3 installed
-* Go to this [link](https://raw.githubusercontent.com/koderts/hangman/refs/heads/main/hangman.py), copy or save the `hangnam.py` file to your local computer. 
+* Go to this [link](https://raw.githubusercontent.com/koderts/hangman/refs/heads/main/hangman.py), copy or save the `hangman.py` file to your local computer. 
 
 ## Play game
 
